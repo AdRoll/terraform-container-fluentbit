@@ -2,7 +2,7 @@ name: terraform-container-fluentbit
 
 license: custom
 
-github_repo: SemanticSugar/terraform-container-fluentbit
+github_repo: AdRoll/terraform-container-fluentbit
 
 related:
 - name: terraform-aws-ecs-container-definition
@@ -24,7 +24,7 @@ usage: |-
   ```hcl
   module "fluentbit_container" {
     # this can and should be pinned to a release tag using ?ref=tags/x.y.z
-    source = "git@github.com:SemanticSugar/terraform-container-fluentbit.git?ref=main"
+    source = "git::https://github.com/AdRoll/terraform-container-fluentbit.git?ref=main"
   }
 
   module "task" {
